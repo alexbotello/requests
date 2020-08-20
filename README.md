@@ -45,7 +45,10 @@ make its request while inside the worker thread.
 import pool "github.com/alexbotello/requests/pool"
 
 func main() {
-    requestors := []pool.Requestor{&TwitterUser{username: "BarackObama"}, &TwitterUser{username: "katyperry"}}
+    requestors := []pool.Requestor{
+        &TwitterUser{username: "BarackObama"},
+        &TwitterUser{username: "katyperry"}
+    }
     // instantiate a new RequestPool
     rp := pool.NewRequestPool(requestors)
     // start the RequestPool -- goroutine will block here until all worker threads complete 
