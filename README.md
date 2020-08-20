@@ -29,3 +29,21 @@ A visualization of the pattern looks like this:
 ![](animation.gif)
 
 
+### Usage
+```go
+package main
+
+import pool "github.com/alexbotello/requests/pool"
+
+func main() {
+    var requestors []pool.Requestor
+
+    rp := pool.NewRequestPool(requestors)
+    rp.Start() // The RequestPool will block here until all worker threads complete
+
+    // parse your data or other cool stuff here
+}
+```
+
+### Examples
+[Twitter: Getting tweets](_examples/twitter.go)
