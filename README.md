@@ -61,5 +61,6 @@ func main() {
 
 RequestPool's implementation makes use of a common concurrency pattern called Fan-Out/Workers.
 A visualization of the pattern looks like this:
+
 ![](animation.gif)
 
