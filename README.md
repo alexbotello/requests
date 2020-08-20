@@ -1,6 +1,9 @@
 # requests
 A package utility that lets me make various requests in Go
 
+Disclaimer: This is just a collection of abstractions that I use for my own personal projects and is not meant to be a "serious" Go Package.
+The code documented here is for my own benefit and learning
+
 ### The Requestor Interface
 ```go
 type Requestor interface {
