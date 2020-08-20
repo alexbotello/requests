@@ -22,7 +22,8 @@ type TwitterUser struct {
 }
 
 type(tu TwitterUser) Request() {
-    // code that makes http request
+    // code uses the twitter username to make api request
+    // to get that user's most recent tweet
 }
 ```
 The TwitterUser type can now be used as a `Requestor`
